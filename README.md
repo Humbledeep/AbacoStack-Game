@@ -1,4 +1,82 @@
-Run Game.py
+You have a structure formed by three side by side stacks that are limited in size. For this game we will limit our stacks to three elements each. For the explanation we will initially limit ourselves to three stacks with a depth of three. You can see above in the picture a physical example with 4 stacks of depth 3.
+
+Back to our explanation, above these three stacks, you have a list of five positions from 0 to 4. The first stack is aligned with position 1; stack 2 with position 2, and stack 3 with position 3. Positions 0 and 4 don't have a stack aligned with them.
+
+See this figure below to have a better idea about how this structure looks.
+
+0 1 2 3 4
+. . . . .
+  . . . 
+  . . . 
+  . . .
+The structure is filled with nine beads: 3 As, 3 Bs and 3 Cs, representing 3 colours. Initially the structure looks like this with the 3 stacks each filled with either all As, Bs, or Cs.
+
+0 1 2 3 4
+. . . . .
+  A B C 
+  A B C 
+  A B C
+The structure always has 9 beads. The beads can move one position at a time to an empty position. An empty position is represented by a "." here.
+
+For example from the initial configuration, one can pop a bead from the first stack and switch it with the top bead in the second stack in the follow series of moves:
+
+0 1 2 3 4
+. . . . .
+  A B C 
+  A B C 
+  A B C
+
+0 1 2 3 4
+. A . . .
+  . B C 
+  A B C 
+  A B C
+
+0 1 2 3 4
+A . . . .
+  . B C 
+  A B C 
+  A B C
+
+0 1 2 3 4
+A . B . .
+  . . C 
+  A B C 
+  A B C
+
+0 1 2 3 4
+A B . . .
+  . . C 
+  A B C 
+  A B C
+ 
+
+0 1 2 3 4
+A . . . .
+  B . C 
+  A B C 
+  A B C
+
+
+0 1 2 3 4
+. A . . .
+  B . C 
+  A B C 
+  A B C
+
+0 1 2 3 4
+. . A . .
+  B . C 
+  A B C 
+  A B C
+
+0 1 2 3 4
+. . . . .
+  B A C 
+  A B C 
+  A B C
+  
+The game consists of getting a random configuration card and doing the minimum numbers of moves to change the beads of the AbacoStack to that given configuration.Run Game.py
 
 The game is played by a user, not the computer. 
 
