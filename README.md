@@ -1,5 +1,7 @@
 ** Note:- See RAW version of this README file.
 
+* New invented game - AbacoStack
+
 You have a structure formed by three side by side stacks that are limited in size. For this game we will limit our stacks to three elements each. For the explanation we will initially limit ourselves to three stacks with a depth of three. You can see above in the picture a physical example with 4 stacks of depth 3.
 
 Back to our explanation, above these three stacks, you have a list of five positions from 0 to 4. The first stack is aligned with position 1; stack 2 with position 2, and stack 3 with position 3. Positions 0 and 4 don't have a stack aligned with them.
